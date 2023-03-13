@@ -2,27 +2,29 @@ package kr.dohoonkim.blog.controllers.user.dto;
 
 
 import kr.dohoonkim.blog.models.User;
-import lombok.Getter;
-import lombok.ToString;
+import lombok.*;
 
 import java.time.LocalDateTime;
 import static com.google.common.base.Preconditions.checkArgument;
 
 @ToString
 @Getter
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
 public class UserDto {
-  private final Long id;
+  private Long id;
 
-  private final String name;
+  private String name;
 
-  private final String email;
+  private String email;
 
-  private final boolean isAdmin;
+  private boolean isAdmin;
 
-  private final boolean isActive;
+  private boolean isActive;
 
-  private final LocalDateTime createdAt;
-  private final LocalDateTime updatedAt;
+  private LocalDateTime createdAt;
+  private LocalDateTime updatedAt;
 
   public UserDto(User user) {
     this.id = user.getId();

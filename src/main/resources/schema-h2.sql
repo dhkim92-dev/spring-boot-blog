@@ -1,6 +1,6 @@
-DROP TABLE bloguser IF EXISTS;
 DROP TABLE article IF EXISTS;
 DROP TABLE category IF EXISTS;
+DROP TABLE bloguser IF EXISTS;
 
 CREATE TABLE bloguser
 (

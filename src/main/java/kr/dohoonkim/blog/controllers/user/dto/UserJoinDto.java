@@ -1,25 +1,16 @@
 package kr.dohoonkim.blog.controllers.user.dto;
 
-import kr.dohoonkim.blog.utilities.EmailValidator;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
-import static com.google.common.base.Preconditions.checkArgument;
-
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
 public class UserJoinDto {
-  private final String name;
-
-  private final String email;
-
-  private final String password;
-
-  public UserJoinDto(String name, String email, String password){
-    checkArgument(name != null, "name must be provided.");
-    checkArgument(name.length() > 0 && name.length() < 50, "invalid name length");
-    checkArgument(email != null, "email must be provided.");
-    checkArgument(EmailValidator.getInstance().validate(email), "invalid email format");
-    checkArgument(password != null, "password must be provided.");
-
-    this.name = name;
-    this.email = email;
-    this.password =password;
-  }
+  private String name;
+  private String email;
+  private String password;
 }

@@ -5,7 +5,11 @@ INSERT INTO bloguser(name, email, password, is_admin, is_active, updated_at) VAL
 INSERT INTO bloguser(name, email, password, is_admin, is_active, updated_at) VALUES('test03', 'test03@gmail.com', '1234', true, true, CURRENT_TIMESTAMP)
 INSERT INTO bloguser(name, email, password, is_admin, is_active, updated_at) VALUES('test04', 'test04@gmail.com', '1234', true, true, CURRENT_TIMESTAMP)
 INSERT INTO bloguser(name, email, password, is_admin, is_active, updated_at) VALUES('test05', 'test05@gmail.com', '1234', true, true, CURRENT_TIMESTAMP)
-
+INSERT INTO bloguser(name, email, password, is_admin, is_active, updated_at) VALUES('test06', 'test06@gmail.com', '1234', true, true, CURRENT_TIMESTAMP)
+INSERT INTO bloguser(name, email, password, is_admin, is_active, updated_at) VALUES('test07', 'test07@gmail.com', '1234', true, true, CURRENT_TIMESTAMP)
+INSERT INTO bloguser(name, email, password, is_admin, is_active, updated_at) VALUES('test08', 'test08@gmail.com', '1234', true, true, CURRENT_TIMESTAMP)
+INSERT INTO bloguser(name, email, password, is_admin, is_active, updated_at) VALUES('test09', 'test09@gmail.com', '1234', true, true, CURRENT_TIMESTAMP)
+INSERT INTO bloguser(name, email, password, is_admin, is_active, updated_at) VALUES('test10', 'test10@gmail.com', '1234', true, true, CURRENT_TIMESTAMP)
 
 -- category add
 INSERT INTO category(name) VALUES('graphics')

@@ -26,6 +26,16 @@ spring:
       schema-locations: classpath:schema-h2.sql
       data-locations: classpath:data-h2.sql
 
+springdoc:
+  swagger-ui :
+    enabled: true
+  api-docs :
+    enabled: true
+  version: 'v3'
+  default-consumes-media-type: application/json
+  default-produces-media-type: application/json
+  model-and-view-allowed : true
+
 server :
   port : 8081
 

@@ -14,7 +14,7 @@ public class GenericListResponse<T> {
 
   private final List<T> data;
 
-  private final int offset;
+  private final int page;
 
-  private final int limit;
+  private final int size;
 }
